@@ -1,2 +1,4 @@
-# Inventory_App
+
+# User Guide
+
 An Inventory App for a seller
