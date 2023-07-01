@@ -3,31 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mohr's Magical Minutiae</title>
     <link rel = "stylesheet" type = "text/css" href = "styling.css">
 </head>
 <body>
     <header>
-        <h1>Mohr's Magical Minutiae</h1>
+        <h1></h1>
         <h2>Jewelry</h2>
     </header>
     <main>
 <!--    1) create at least 3 unique resources (grab 3 pics of jewelry)
         
-        2) create the following information fields *name, *price, and *"in stock"; 
-        for jewelry also include sale price, type/color of materials*, length, width*, diameter, *stock number,
+        2) create the following information fields *name, *price, and 
+        *"in stock" (can be updated to "out of stock" and vice versa); for jewelry also include 
+        sale price, type/color of materials*, length, width*, diameter, *stock number,
         Note: items marked with "*" should be required
         
         3) Each source needs a "remove" button incase item no longer sold
         
         4a) Create a form for the USER that includes all above fields, as well as an 
-        image url upload field, a "Sumbit" button, and a "Reset" form button.
-        4b) The "Sumbit" button adds each new resource to the top of the page 
+        image url upload field, a "Submit" button, and a "Reset" form button.
+        4b) The "Submit" button adds each new resource to the top of the page 
         and auto-clears the form. Note forms auto-clear when a "submit" button is pressed
         but doesn't add items to the top of the page.
         4c) "Reset" button clears the form but doesn't submit the info
-        5)
+        
+        5) Should hava a clear header that includes a title
      -->
+     <form>
+         <legend></legend>
+         <label for = "name"> Name:</label><br>
+         <input type = "text" id = "name" name = "name" required><br>
+         <label for = "price"> Price:</label><br>
+         <input type = "number" id = "price" name = "price" required><br>
+         <input type = "radio" id = "In stock" name = "in/out of stock" required>
+         <label for = "In stock"> In stock</label>
+         <input type = "radio" id = "Out of stock" name = "in/out of stock" required>
+         <label for = "Out of stock"> Out of stock</label><br>
+
+     </form>
     </main>
     <footer>
 
