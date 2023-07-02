@@ -19,11 +19,11 @@
         [X]*price, and 
         [X]*"in stock" (can be updated to "out of stock" and vice versa); for jewelry also include 
         [X]sale price, 
-        [ ]type/color of materials*, 
-        [ ]length, 
-        [ ]width*, 
-        [ ]diameter,
-        [ ]*stock number,
+        [0]type/color of materials*, 
+        [0]length, 
+        [0]width*, 
+        [0]diameter,
+        [0]*stock number,
         Note: items marked with "*" should be required
         
         3) Each source needs a "remove" button incase item no longer sold
@@ -32,8 +32,8 @@
         [ ]
         
         4a) Create a form for the USER that includes all above fields, as well as an 
-        [ ]image url upload field, a 
-        [x]"Submit" button, and a 
+        [0]image upload field,
+        [x]"Submit" button, 
         [X]"Reset" form button.
         
         4b) The "Submit" button adds each new resource to the top of the page 
@@ -57,9 +57,20 @@
         <input type = "radio" id = "In stock" name = "in/out of stock" required>
         <label for = "In stock">In stock</label>
         <input type = "radio" id = "Out of stock" name = "in/out of stock" required>
-        <label for = "Out of stock"> Out of stock</label><br><br>
+        <label for = "Out of stock">Out of stock</label><br><br>
+        <label for = "stockNumber">Stock Number: </label>
+        <input type = "number" id = "stockNumber" name = "stockNumber" required><br><br>
         <label for = "Materials">Materials:</label><br>
         <input type = "text" id = "Materials" name = "Materials"><br><br>
+        <label for = "length">Length: </label>
+        <input type = "number" id = "length" name = "length"><br><br>
+        <label for = "width">Width: </label>
+        <input type = "number" id = "width" name = "width" required><br><br>
+        <label for = "diameter">Diameter: </label>
+        <input type = "number" id = "diameter" name = "diameter"><br><br>
+        <p>To upload an image click on the "Choose File" button.</p>
+        <form action = "/action_page.php">
+        <input type = "file" id = "myFile" name = "filename" required>
         <input type = "submit" value = "Submit">
         <input type = "reset"  value = "Reset"><br>
      </form>
